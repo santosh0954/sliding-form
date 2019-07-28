@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+        * {
+            box-sizing: border-box;
+        }
+		
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat, sans-serif;
+            font-size: 100%;
+            background: #f1f1f1;
+        }
+        .container {
+            width: 750px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 75px auto;
+			background: #fff;
+			box-shadow: 0 3px 6px 2px rgba(230,0,0,0.2);
+            
+        }
+        .row {
+            width: 100%;
+            display: flex;
+           
+            position: relative;
+            
+        }
+        h2 {
+            text-align: center;
+            
+        }
+        .col-50{
+            width: 50%;
+            padding: 30px;
+            position: relative;
+            transition: all 1s ease-out;
+                
+        }
+        #left-c {
+            transform: scale(0.5);
+        }
+        .col-75 {
+            width: 75%;
+            padding-right: 10px;
+        }
+        .col-25 {
+            padding-left: 10px;
+        }
+       
+        input:not([type = "checkbox"]):not( [type = "radio"]):not([type ="submit"]) {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+			border: none;
+            border-radius: 5px;
+            background: #ddd;
+             color: #FF416C;
+        }
+       
+        input.submit {
+            margin-top: 20px;
+            width: 100%;
+            background: #FF416C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            border: none;
+            border-radius: 6px;
+            padding: 12px;
+            color: #ddd;
+            font-size: 120%;
+            font-weight: 500;
+            letter-spacing: 2px;
+            cursor: pointer;
+            box-shadow: 0 2px 3px rgba(230,0,0,0.5);
+            transition: all 0.1s ease-out;
+        }
+        .submit:active {
+            position: relative;
+            transform: scale(0.95);
+        }
+        .submit:hover {
+            box-shadow: 0 3px 5px rgba(230,0,0,0.5);
+            color: #fff;
+        }
+        .left {
+            position: absolute;
+            background: #FF416C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+       
+            left: 0;
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            z-index: 5;
+            transition: left 1s;
+        }
+		#overlay-left, #overlay-right {
+		    padding: 10px;
+		    color: #fff;
+            position: relative;
+		    top: 50%;
+            transform: translateY(-50%);
+			transition: 0.6s ease;
+		}
+        button {
+            width: 120px;
+            padding: 12px;
+            background: transparent;
+            color: #fff;
+			font-size: 120%;
+            font-weight: 500;
+            letter-spacing: 2px;
+            cursor: pointer;
+            border: 1px solid white;
+            border-radius: 50px;
+            transition: all 0.1s linear;
+        }
+          button:active {
+            transform: scale(0.89);
+        }
+       
+		 .left button:focus {
+		      outline: none;
+		 }
+        #overlay-right {
+            display: none;
+        }

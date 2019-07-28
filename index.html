@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>resoponsive form</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+               <div class="left" id= "left">
+			   <div id="overlay-left">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+                   <button type="button" class="sign" id="trigger">SignUp</button>
+				</div>
+				<div id="overlay-right">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+                   <button type="button" class="log" id="trigger2">log In</button>
+				   </div>
+               </div>
+            <div class="col-50" id="left-c">
+                <h2>SignUp</h2>
+                <form action="">
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <div class="col-25">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <input type="email" placeholder="Email">
+                    <div class="row">
+                        <div class="col-50">
+                            <input type="radio" name="gender" value="male"> Male
+                        </div>
+                        <div class="col-50">
+                            <input type="radio" name="gender" value="female"> Female
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    <input type="password" placeholder="Enter Password">
+                        
+                    </div>
+                    <div class="row">
+                    <input type="password" placeholder="Confirm Password">
+                        
+                    </div>
+                    
+                    <div><input type="checkbox" id="terms"> <label for="terms">I agree terms and condition.</label></div>
+                    <input type="submit" class="submit" value="SignUp">
+
+                </form>
+            </div>
+            <div class="col-50" id="right-c">
+                 <h2>Log In</h2>
+                <form action="">
+                    
+                    <input type="email" placeholder="Email">
+                   
+                    <input type="password" placeholder="Enter Password">
+                    
+                    <input type="checkbox" id="rem"><label for="rem">Remember me.</label> 
+                    <input type="submit" class="submit" value="LogIn">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js">
+    </script>
+
+</body>
+
+</html>
